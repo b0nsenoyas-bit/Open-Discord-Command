@@ -6,6 +6,9 @@ from zoneinfo import ZoneInfo
 
 TOKEN = os.getenv("TOKEN")
 
+print("TOKEN exists:", os.getenv("TOKEN") is not None)
+print("TOKEN repr:", repr(os.getenv("TOKEN")))
+
 JST = ZoneInfo("Asia/Tokyo")
 
 # 対象チャンネル（雑談）
