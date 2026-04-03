@@ -4,8 +4,8 @@ from discord.ext import tasks
 from datetime import datetime, time
 from zoneinfo import ZoneInfo
 
-import os
 TOKEN = os.getenv("TOKEN")
+print("TOKEN exists:", TOKEN is not None)
 
 print("TOKEN exists:", TOKEN is not None)
 print("TOKEN repr:", repr(TOKEN))
