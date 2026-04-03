@@ -4,10 +4,12 @@ from discord.ext import tasks
 from datetime import datetime, time
 from zoneinfo import ZoneInfo
 
-TOKEN = os.getenv("TOKEN")
+TOKEN = "dD3GvsvQ6Z_iwo6IYt7KyC07U11hR8a0"
 
-print("TOKEN exists:", os.getenv("TOKEN") is not None)
-print("TOKEN repr:", repr(os.getenv("TOKEN")))
+print("TOKEN exists:", TOKEN is not None)
+print("TOKEN repr:", repr(TOKEN))
+
+JST = ZoneInfo("Asia/Tokyo")
 
 JST = ZoneInfo("Asia/Tokyo")
 
